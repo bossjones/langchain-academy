@@ -21,3 +21,4 @@ better_exceptions
 rich
 bpython
 pylint-per-file-ignores
+pylint-pydantic
