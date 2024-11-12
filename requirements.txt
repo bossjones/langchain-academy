@@ -9,3 +9,15 @@ notebook
 tavily-python
 wikipedia
 marimo
+yapf
+flake8
+black
+ruff
+isort
+autopep8
+autoflake
+pylint
+better_exceptions
+rich
+bpython
+pylint-per-file-ignores
