@@ -36,7 +36,7 @@ def __(mo):
 def __():
     # magic command not supported in marimo; please file an issue to add support
     # %%capture --no-stderr
-    # %pip install --quiet -U langchain_core langgraph
+    # # %pip install --quiet -U langchain_core langgraph
     return
 
 
@@ -435,7 +435,7 @@ def __(Annotated, TypedDict):
 
     # Use MessagesState, which includes the messages key with add_messages reducer
     class ExtendedMessagesState(MessagesState):
-        # Add any keys needed beyond messages, which is pre-built 
+        # Add any keys needed beyond messages, which is pre-built
         added_key_1: str
         added_key_2: str
         # etc

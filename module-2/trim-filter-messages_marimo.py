@@ -44,7 +44,7 @@ def __(mo):
 def __():
     # magic command not supported in marimo; please file an issue to add support
     # %%capture --no-stderr
-    # %pip install --quiet -U langchain_core langgraph langchain_openai
+    # # %pip install --quiet -U langchain_core langgraph langchain_openai
     return
 
 
@@ -115,6 +115,9 @@ def __(mo):
 
 @app.cell
 def __(messages):
+    # pyright: reportMissingImports=false
+    # pyright: reportMissingModuleSource=false
+    # pylint: disable=bad-plugin-value
     from langchain_openai import ChatOpenAI
     llm = ChatOpenAI(model="gpt-4o")
     llm.invoke(messages)

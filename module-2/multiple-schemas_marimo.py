@@ -46,7 +46,7 @@ def __(mo):
 def __():
     # magic command not supported in marimo; please file an issue to add support
     # %%capture --no-stderr
-    # %pip install --quiet -U langgraph
+    # # %pip install --quiet -U langgraph
     return
 
 
